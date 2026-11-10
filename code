@@ -1,0 +1,8 @@
+git --version
+git config --global user.name "Anna Cruze"
+git config --global user.email "annacruze@karunya.edu.in"
+mkdir ctc-exp1
+cd ctc-exp1
+git init
+echo lalalallalalalal . > demo.txt
+  
