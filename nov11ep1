@@ -1,0 +1,155 @@
+Experiment 1 – Git and GitHub Essentials
+1. Aim
+To perform basic Git operations such as repository initialization, file tracking, committing, branching, merging, and pushing changes to GitHub.
+2. New names
+Item	Name
+Project folder	git-lab-exam
+GitHub repository	git-lab-exam
+Main branch	main
+Feature branch	feature
+GitHub username	azcruze
+File	index.html
+
+3. Procedure
+1. Create a project folder named git-lab-exam.
+2. Navigate into the folder.
+3. Initialize the Git repository.
+4. Check the repository status.
+5. Create an HTML file named index.html.
+6. Add the file to the staging area.
+7. Commit the changes.
+8. Rename the default branch to main.
+9. Create a new empty GitHub repository named git-lab-exam.
+10. Connect the local repository to GitHub.
+11. Push the local repository to GitHub.
+12. Create a feature branch.
+13. Modify the HTML file and commit the changes.
+14. Switch to the main branch.
+15. Merge the feature branch into main.
+16. Push the updated changes to GitHub.
+17. Verify the repository on GitHub.
+4. Complete commands – Copy and execute
+Step 1 – Create project folder
+mkdir git-lab-exam
+cd git-lab-exam
+
+
+Step 2 – Initialize Git
+git init
+git status
+
+
+Step 3 – Create HTML file
+notepad index.html
+
+
+Paste this code:
+
+<html>
+<head>
+    <title>Git Lab Examination</title>
+</head>
+<body>
+    <h1>Welcome to Git and GitHub</h1>
+    <p>DevOps Lab Experiment 1</p>
+</body>
+</html>
+
+
+
+Save and close Notepad.
+
+Step 4 – Add and commit files
+git add .
+git commit -m "Initial commit"
+
+
+Step 5 – Rename branch
+git branch -M main
+
+
+Step 6 – Create GitHub repository
+
+Open GitHub – Create a new repository.
+
+Create the repository with these details:
+- Repository name: git-lab-exam
+- Owner: azcruze
+- Visibility: Public or Private
+- Do not select Add a README file.
+- Do not add a .gitignore or license.
+Click Create repository.
+
+Step 7 – Connect local repository to GitHub
+git remote add origin https://github.com/azcruze/git-lab-exam.git
+git remote -v
+
+
+Step 8 – Push files to GitHub
+git push -u origin main
+
+
+If GitHub asks you to authenticate, complete the sign-in in the browser or use the authentication method provided.
+
+Step 9 – Create feature branch
+git checkout -b feature
+
+
+Step 10 – Modify the HTML file
+notepad index.html
+
+
+Replace the existing HTML with:
+
+<html>
+<head>
+    <title>Git Lab Examination</title>
+</head>
+<body>
+    <h1>Welcome to Git and GitHub</h1>
+    <p>DevOps Lab Experiment 1</p>
+    <h2>Feature Branch Successfully Created</h2>
+</body>
+</html>
+
+
+
+Save and close Notepad.
+
+Step 11 – Add and commit the changes
+git add .
+git commit -m "Added feature"
+
+
+Step 12 – Switch to main branch
+git checkout main
+
+
+Step 13 – Merge feature branch
+git merge feature
+
+
+Step 14 – Push updated changes
+git push
+
+
+Step 15 – Verify
+git status
+git branch
+git log --oneline
+
+
+Open your repository:
+azcruze/git-lab-examYou should see index.html and the latest commits.
+5. Expected output
+- Git repository initialized successfully.
+- HTML file created and committed.
+- Main and feature branches created.
+- Feature branch successfully merged into main.
+- Changes pushed to GitHub.
+- Repository and files visible on GitHub.
+6. Result
+Git operations including initialization, staging, committing, branching, merging, and pushing were successfully performed using Git and GitHub.
+7. Memory tip
+Remember this order
+Create → Init → Add → Commit → Main → Remote → Push → Feature → Commit → Merge → Push → Verify
